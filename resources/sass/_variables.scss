@@ -21,47 +21,53 @@ $hover: #fdd49a;
 
 //font-sizes
 $default: (
-  null : 10px,
-  480px : 12px,
-  640px : 14px,
-  1024px: 16px
+    null : 10px,
+    480px : 12px,
+    640px : 14px,
+    1024px: 16px
 );
 
 $btn-f-size: (
-  null : 10px,
-  480px : 12px,
-  640px : 14px,
-  1024px: 16px
+    null : 10px,
+    480px : 12px,
+    640px : 14px,
+    1024px: 16px
 );
 
 $btn-l-height: (
-  null : 12px,
-  480px : 14px,
-  640px : 18px,
-  1024px: 24px
+    null : 12px,
+    480px : 14px,
+    640px : 18px,
+    1024px: 24px
 );
 
 
+$f-size-10: (
+    null : 12px,
+);
 $f-size-14: (
-  null : 14px,
+    null : 14px,
 );
 $f-size-16: (
-  null : 16px,
+    null : 16px,
 );
 $f-size-18: (
-  null : 18px,
+    null : 18px,
 );
-$f-size-10: (
-  null : 12px,
+$f-size-24: (
+    null : 24px,
 );
 
 //line heights
 $l-height-12: (
-  null : 12px,
+    null : 12px,
 );
 $l-height-16: (
-  null : 16px,
+    null : 16px,
 );
 $l-height-24: (
-  null : 24px,
+    null : 24px,
+);
+$l-height-32: (
+    null : 32px,
 );

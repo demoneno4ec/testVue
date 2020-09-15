@@ -24,6 +24,6 @@
         "vuex": "^3.5.1"
     },
     "dependencies": {
-        "destyle": "^1.1.4"
+        "destyle.css": "^1.0.11"
     }
 }

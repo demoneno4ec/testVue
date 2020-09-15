@@ -19,15 +19,12 @@
 <body class="page">
     <div class="page__vue-application js-page__vue-application">
         <header class="page__header">
-            <h1>
-
-            </h1>
+            @yield('title')
         </header>
-        <main class="page__content">
+        <main class="page__content js-page__vue-application">
             @yield('content')
         </main>
         <footer class="page__footer">
-            footer
         </footer>
     </div>
     <script src="{{ asset('js/app.js') }}" defer></script>
