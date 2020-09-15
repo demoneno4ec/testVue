@@ -15,7 +15,7 @@ class ApartmentController extends Controller
 
     public function list()
     {
-        $apartments = Apartment::factory()->count(9)->make();
+        $apartments = Apartment::factory()->count(9)->make(['image' => 'https://i.ytimg.com/vi/u4PLCLefGNs/hqdefault.jpg']);
 
         return $apartments->toJson();
     }
