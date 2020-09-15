@@ -1,0 +1,79 @@
+.apartment {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        'picture'
+        'content';
+    border: 1px solid;
+    border-radius: 16px;
+    overflow: hidden;
+
+
+    &__content {
+        padding: 12px 8px 16px;
+    }
+
+    &__address {
+        @include font-size($f-size-14);
+        @include line-height($l-height-16);
+        color: $grey-strong;
+        margin-top: 4px;
+    }
+
+    &__name {
+        @include font-size($f-size-18);
+        font-weight: bold;
+    }
+
+    &__description {
+        margin-top: 8px;
+        text-align: justify;
+    }
+
+    &__liked {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        background: white;
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__image-box {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:before {
+            content: '';
+            padding-top: 100%;
+            grid-area: picture;
+            display: block;
+            @media screen and (max-width: 768px) {
+                padding-top: 75%;
+            }
+        }
+    }
+
+    &__content {
+        grid-area: content;
+    }
+
+    &__image {
+        max-width: 100%;
+        position: absolute;
+        width: clamp(320px, 100%, 100%);
+        height: clamp(320px, auto, 100%);
+    }
+
+    &__icon {
+        fill: $red;
+    }
+}

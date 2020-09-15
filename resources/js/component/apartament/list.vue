@@ -9,6 +9,9 @@
                    :description="apartment.text"
                    :liked="apartment.liked"
         ></apartment>
+        <div class="apartments__apartment apartments__apartment_empty"></div>
+        <div class="apartments__apartment apartments__apartment_empty"></div>
+        <div class="apartments__apartment apartments__apartment_empty"></div>
     </div>
 </template>
 
@@ -74,3 +77,20 @@
         }
     }
 </script>
+
+<style lang="scss">
+    .apartments {
+        margin: -16px -24px;
+        display: flex;
+        flex-wrap: wrap;
+
+        &__apartment {
+            flex: 1 1 320px;
+            margin: 0 24px;
+
+            &:not(&_empty) {
+                margin: 16px 24px;
+            }
+        }
+    }
+</style>

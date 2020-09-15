@@ -6,7 +6,7 @@
     </div>
 @endsection
 @section('content')
-    <div class="content">
+    <div class="content page__apartments">
         <apartments></apartments>
     </div>
 @endsection
