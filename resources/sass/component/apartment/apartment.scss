@@ -11,6 +11,7 @@
 
 
     &__content {
+        grid-area: content;
         padding: 12px 8px 16px;
     }
 
@@ -35,13 +36,27 @@
         position: absolute;
         top: 24px;
         right: 24px;
-        background: white;
-        width: 32px;
-        height: 32px;
-        border-radius: 16px;
+        background: $white;
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
         display: flex;
         align-items: center;
         justify-content: center;
+        border: 1px solid $red;
+        transition: $transition;
+        fill: $red;
+
+        &_disable {
+            cursor: default;
+        }
+
+        &:hover:not(&_disable) ,
+        &_disable {
+            cursor: pointer;
+            background: $red;
+            fill: $white;
+        }
     }
 
     &__image-box {
@@ -62,10 +77,6 @@
         }
     }
 
-    &__content {
-        grid-area: content;
-    }
-
     &__image {
         max-width: 100%;
         position: absolute;
@@ -74,6 +85,6 @@
     }
 
     &__icon {
-        fill: $red;
+        fill: inherit;
     }
 }

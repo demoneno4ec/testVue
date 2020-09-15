@@ -18,7 +18,11 @@
                 {{description}}
             </div>
         </div>
-        <button class="apartment__liked">
+        <button class="apartment__liked"
+                :class="{apartment__liked_disable: checked}"
+                :disabled="checked"
+                @click="changeLiked"
+        >
             <vue-svg code="love"
                      class="apartment__icon"
             ></vue-svg>
@@ -50,6 +54,16 @@
                 type: Boolean,
                 default: false
             },
+        },
+        data(){
+            return {
+                checked: this.liked
+            }
+        },
+        methods: {
+            changeLiked() {
+                this.checked = !this.checked;
+            }
         }
     }
 </script>
