@@ -1,15 +1,27 @@
 <template>
     <div class="apartments">
-{{apartments}}
+        <apartment v-for="(apartment, index) in apartments"
+                   class="apartments__apartment"
+                   :key="index"
+                   :name="apartment.name"
+                   :address="apartment.address"
+                   :image="apartment.image"
+                   :description="apartment.text"
+                   :liked="apartment.liked"
+        ></apartment>
     </div>
 </template>
 
 <script>
     import axios from 'axios';
-    import Entity from "json-entity";
+    import Entity from 'json-entity';
+    import apartment from './item';
 
     export default {
         name: "list.vue",
+        components: {
+            apartment
+        },
         data() {
             return {
                 apartments: []
@@ -34,7 +46,7 @@
             filterData(apartments) {
                 let templateEntity = {
                         name: true,
-                        address:{if: (user, options) => options.output === 'full'},
+                        address: {if: (user, options) => options.output === 'full'},
                         text: {if: (user, options) => options.output === 'full'},
                         liked: true,
                         image: true

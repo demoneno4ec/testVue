@@ -17,8 +17,7 @@ require('./bootstrap');
  *
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
-// Vue.component('vue-svg', require('./components/default/svg.vue').default);
-// Vue.component('v-btn', require('./components/default/buttons/v-btn.vue').default);
+Vue.component('vue-svg', require('./component/common/svg.vue').default);
 Vue.component('apartments', require('./component/apartament/list.vue').default);
 
 /**
