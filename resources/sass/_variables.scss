@@ -1,0 +1,67 @@
+//z-index level
+$z-first-layer: 100;
+$z-second-layer: 200;
+
+//Animation
+$transition: 300ms;
+
+//Font-family
+$Roboto: Roboto, serif;
+
+//Colors
+$white: #fff;
+$black: #181818;
+$green: #A3CC04;
+$yellow: #F6D403;
+$red: #EC1C24;
+$grey-light: #DEDEDE;
+$grey-strong: #6C6B6B;
+$hover: #fdd49a;
+
+
+//font-sizes
+$default: (
+  null : 10px,
+  480px : 12px,
+  640px : 14px,
+  1024px: 16px
+);
+
+$btn-f-size: (
+  null : 10px,
+  480px : 12px,
+  640px : 14px,
+  1024px: 16px
+);
+
+$btn-l-height: (
+  null : 12px,
+  480px : 14px,
+  640px : 18px,
+  1024px: 24px
+);
+
+
+$f-size-14: (
+  null : 14px,
+);
+$f-size-16: (
+  null : 16px,
+);
+$f-size-18: (
+  null : 18px,
+);
+$f-size-10: (
+  null : 12px,
+);
+
+//line heights
+$l-height-12: (
+  null : 12px,
+);
+$l-height-16: (
+  null : 16px,
+);
+$l-height-24: (
+  null : 24px,
+);

@@ -1,0 +1,11 @@
+@mixin line-height($lh-map) {
+  @each $lh-breakpoint, $lh-value in $lh-map {
+    @if $lh-breakpoint == null {
+      line-height: $lh-value;
+    } @else {
+      @media screen and (min-width: $lh-breakpoint) {
+        line-height: $lh-value;
+      }
+    }
+  }
+}
