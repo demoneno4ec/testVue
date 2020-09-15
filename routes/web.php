@@ -1,5 +1,5 @@
 <?php
-declare(strict_types = 1);
+declare(strict_types=1);
 
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
@@ -17,6 +17,5 @@ use Illuminate\Support\Facades\Route;
 
 App::setLocale('ru');
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'App\Http\Controllers\ApartmentController@index')->name('apartmentsPage');
+Route::get('/list', 'App\Http\Controllers\ApartmentController@list')->name('apartments');
